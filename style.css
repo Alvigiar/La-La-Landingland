@@ -1,0 +1,239 @@
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+}
+@media (min-width:992px){
+  .wrapper{
+    width:944px;
+  }
+}
+
+/* Header */
+
+.nav_list {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0px;
+    padding: 0px;
+    flex-wrap: wrap;
+    list-style: none;
+}
+@media (max-width:576px) {
+  .nav_list{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.nav_text {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #828282;
+}
+
+.nav_list a:hover {
+    color: black;
+}
+
+.nav_line {
+    border: 1px solid #828282;
+    /*width: 940px;*/
+    width: 90%;
+    text-align: center;
+}
+@media (max-width:576px) {
+  .nav_line{
+    margin-bottom: 50px;
+  }
+}
+
+/* / Header */
+/* Chelik */
+
+.den-column{
+  display: flex;
+  align-items: flex-end;
+  box-sizing: border-box;
+  column-count: 2;
+}
+@media (max-width:576px) {
+  .den-column{
+    column-gap: 20%;
+  }
+}
+@media (min-width:992px){
+  .den_column{
+    column-gap: 30%;
+    color: red;
+  }
+}
+
+ /*.language_panel_list {
+     display: flex;
+     transform: rotate(-90deg);
+     font-size: 18px;
+     list-style: none;
+ }
+
+.language_deg {
+    color: #828282;
+    text-decoration: none;
+ }
+
+.language_panel_list li:hover {
+    color: black;
+ }*/
+
+.chelik_img {
+    margin-top: 29px;
+}
+@media (max-width:576px) {
+  .chelik_img{
+    width: 100%;
+    height: 15em;
+  }
+}
+@media (min-width:992px){
+  .chelik_img{
+    width:944px;
+  }
+}
+
+/* / Chelik */
+/* About me */
+
+.about_me {
+    display: flex;
+    justify-content: center;
+    height: 506px;
+    margin-top: 100px;
+    background-color: #F6F6F6;
+}
+
+.about_text {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 18px;
+}
+
+/* / About me */
+/* Skills */
+
+.skills {
+    margin-top: 90px;
+}
+
+.skills_text {
+    text-align: center;
+    line-height: 40px;
+}
+
+.skills_img_block {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+@media (max-width:576px){
+  .skills_img_block{
+    display: block;
+    column-count: 2;
+    text-align:center;
+    line-height: 150px;
+  }
+}
+@media (min-width:992px){
+  .skills_img_block{
+    display: flex;
+    justify-content: space-around;
+    color: red;
+  }
+}
+
+/* / Skills */
+/* Portfolio */
+
+.portfolio {
+    display: flex;
+    justify-content: center;
+    /*height: 2250px;*/
+    margin-top: 100px;
+    background-color: #F6F6F6;
+}
+
+.portfolio_content {
+    text-align: center;
+    margin-top: 110px;
+}
+
+.portfolio_img{
+  
+}
+@media (max-width:576px) {
+  .portfolio_img{
+    width: 100%;
+    height: 20em;
+  }
+}
+@media (min-width:992px){
+  .portfolio_img{
+    width: 944px;
+  }
+}
+
+.portfolio_content_block {
+    margin-bottom: 100px;
+    line-height: 45px;
+}
+
+.portfolio_content_text {
+    color: black;
+    text-decoration: underline;
+}
+/* / Portfolio */
+/* Contacts */
+
+.contacts_block {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px;
+    text-align: center;
+}
+
+.contacts_button {
+    /*margin-top: 30px;*/
+}
+
+.contacts_button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+.social_network {
+    display:flex;
+    padding: 30px;
+    height: 50px;
+}
+/*@media (max-width:576px){
+  .social_network{
+    column-count: 2;
+  }
+}*/
+
+.social_network_img{
+  
+}
+
+.foot_text {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #828282;
+}
+
+/* / Contacts */
