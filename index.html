@@ -12,19 +12,25 @@
   
     <!-- Header -->
 
-    <header class="head">
-        <div class="wrapper">
-            <nav>
-                <ul class="nav_list">
-                    <li><a href="#" class="nav_text">Home</a></li>
-                    <li><a href="#About me" class="nav_text">About me</a></li>
-                    <li><a href="#Skills" class="nav_text">Skills</a></li>
-                    <li><a href="#Portfolio" class="nav_text">Portfolio</a></li>
-                    <li><a href="#Contacts" class="nav_text">Contacts</a></li>
-                </ul>
-                <hr class="nav_line">
-            </nav>
+    <header class="wrapper">
+      <aside class="menu">
+        <div class="container__button">
+          <button class="button__close-menu">Close menu</button>
         </div>
+        <nav class="wrapper">
+          <ul class="nav_list">
+            <li><a href="#" class="nav_text">Home</a></li>
+            <li><a href="#About me" class="nav_text">About me</a></li>
+            <li><a href="#Skills" class="nav_text">Skills</a></li>
+            <li><a href="#Portfolio" class="nav_text">Portfolio</a></li>
+            <li><a href="#Contacts" class="nav_text">Contacts</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <hr class="nav_line">
+      <div class="container__button">
+        <button class="button__open-menu">Open menu</button>
+      </div>
     </header>
 
     <!-- / Header -->
@@ -130,5 +136,23 @@
     
     <!-- /Contacts -->
     
+<script>
+  document.addEventListener('DOMContentLoaded', function() { // добавляем эвент, запускающий скрипт после загрузки контента страницы.
+    const menu = document.querySelector('.menu'); // находим элемент меню в документе.
+    const menuOpenBtn = document.querySelector('.button__open-menu'); // находим элемент кнопки открытия в документе.
+    const menuCloseBtn = document.querySelector('.button__close-menu'); // находим элемент кнопки закрытия в документе.
+
+    function openMenu() { // функция открытия меню, которая добавляет класс "open" элементу "menu"
+      menu.classList.add('open');
+    }
+    function closeMenu() { // функция закрытия меню, удаляющая класс "open" у элементу "menu"
+      menu.classList.remove('open');
+    }
+
+    menuOpenBtn.addEventListener('click', openMenu); // Добавляем эвент, запускающий функцию открытия меню
+    menuCloseBtn.addEventListener('click', closeMenu); // Добавляем эвент, запускающий функцию закрытия меню
+
+  });
+</script>
 </body>
 </html>

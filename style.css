@@ -9,6 +9,29 @@
 }
 
 /* Header */
+@media(max-width:576px){
+  .container__button{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+  .menu{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.5s;
+    transform: translateX(-100%);
+    background-color: #eee;
+}
+  .menu.open{
+    transform: translateX(0%);
+}
+}
+@media(min-width:576px){
+  .container__button{
+    display: none;
+  }
+}
 
 .nav_list {
     display: flex;
@@ -39,13 +62,12 @@
 
 .nav_line {
     border: 1px solid #828282;
-    /*width: 940px;*/
     width: 90%;
     text-align: center;
 }
 @media (max-width:576px) {
   .nav_line{
-    margin-bottom: 50px;
+    display: none;
   }
 }
 
@@ -69,22 +91,6 @@
     color: red;
   }
 }
-
- /*.language_panel_list {
-     display: flex;
-     transform: rotate(-90deg);
-     font-size: 18px;
-     list-style: none;
- }
-
-.language_deg {
-    color: #828282;
-    text-decoration: none;
- }
-
-.language_panel_list li:hover {
-    color: black;
- }*/
 
 .chelik_img {
     margin-top: 29px;
@@ -217,17 +223,12 @@
 
 .social_network {
     display:flex;
-    padding: 30px;
+    justify-content: space-between;
     height: 50px;
 }
-/*@media (max-width:576px){
-  .social_network{
-    column-count: 2;
-  }
-}*/
 
-.social_network_img{
-  
+.social_network a:not(first-child){
+    padding: 20px;
 }
 
 .foot_text {
